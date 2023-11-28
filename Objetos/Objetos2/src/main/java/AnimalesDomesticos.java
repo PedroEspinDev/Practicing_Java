@@ -35,7 +35,7 @@ public class AnimalesDomesticos {
         animalesDomesticos[13] = new Raton("Squeaky", 0.320, 0.85);
         animalesDomesticos[14] = new Raton("Bigotes", 0.200, 0.70);
 
-        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("-------------------------------- EJERCICIO 2 -----------------------------------");
 
         //Bucle para recorrer el array e imprimir cada animal.
         for (Animal animal : animalesDomesticos) {
@@ -44,12 +44,11 @@ public class AnimalesDomesticos {
         }
 
         /*
-        ------ IMPLEMENTACIONES FUERA DE ENUNCIADO ------
         Generamos un objeto de tipo Perro, y llamamos a los métodos que se llaman iguales,
         pero ejecutan acciones distintas.
         */
 
-        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("------------------------- IMPLEMENTACIONES FUERA DE ENUNCIADO ---------------------------");
         Perro perro = new Perro();
         perro.setNombre("Manchas");
         perro.llamar();
@@ -65,7 +64,7 @@ public class AnimalesDomesticos {
         sonidoAnimal1.hablar();
         Animal sonidoAnimal2 = new Raton();
         sonidoAnimal2.hablar();
-        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("----------------------------- EJERCICIO 3 ------------------------------------");
         // Encuentra el animal más pesado automáticamente
         Animal animalMasPesado = encontrarAnimalMasPesado(animalesDomesticos);
 
@@ -78,7 +77,7 @@ public class AnimalesDomesticos {
         }
     }
 
-    // Método para encontrar el animal más pesado en un array de animales
+    // Método para encontrar el animal más pesado en el array de animalesDomesticos
     public static Animal encontrarAnimalMasPesado(Animal[] animales) {
         if (animales == null || animales.length == 0) {
             return null; // Retorna null si el array está vacío o es null
